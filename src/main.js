@@ -1,7 +1,7 @@
 import {PLATFORM} from 'aurelia-pal';
 import 'babel-polyfill';
 import * as Bluebird from 'bluebird';
-import 'jquery';
+// import 'jquery';
 import 'kendo.all.min';
 
 export async function configure(aurelia) {
