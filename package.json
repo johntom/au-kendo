@@ -8,6 +8,7 @@
   },
   "author": "Matt Duffield <matt.duffield@gmail.com> (https://frontendcreator.com/)",
   "fecDependencies": {
+    "aurelia-kendoui-bridge": "https://unpkg.com/aurelia-kendoui-bridge@1.7.0/dist/aurelia-kendoui-bridge.js"
   },
   "dependencies": {
     "aurelia-animator-css": "1.0.4",
@@ -37,7 +38,6 @@
     "aurelia-templating-binding": "1.4.1",
     "aurelia-templating-resources": "1.6.0",
     "aurelia-templating-router": "1.3.1",
-    "aurelia-kendoui-bridge": "1.7.0",
     "bluebird": "3.5.1",
     "isomorphic-fetch": "2.2.1",
     "lodash": "4.17.10",
