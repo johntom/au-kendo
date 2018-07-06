@@ -10,7 +10,6 @@ export async function configure(aurelia) {
     .developmentLogging()
     .plugin('aurelia-kendoui-bridge');
 
-
   await aurelia.start();
   await aurelia.setRoot(PLATFORM.moduleName('app'));
 }
