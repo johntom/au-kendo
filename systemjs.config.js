@@ -15,9 +15,7 @@
       }
     },
     paths: {
-      'npm:': 'https://unpkg.com/',
-      'kendo.all.min': 'https://fec.blob.core.windows.net/bundles/kendo-ui/2017.2.621/kendoui-javascript',
-      'aurelia-kendoui-bridge': 'https://fec.blob.core.windows.net/bundles/kendo-ui/2017.2.621/aurelia-kendoui-bridge'
+      'npm:': 'https://unpkg.com/'
     },
     map: {
       'plugin-babel': 'npm:systemjs-plugin-babel@0.0.25/plugin-babel.js',
@@ -26,12 +24,7 @@
       'plugin-json': 'npm:systemjs-plugin-json@0.3.0/json.js',
       'plugin-text': 'npm:systemjs-plugin-text@0.0.11/text.js',
       'babel-polyfill': 'npm:babel-polyfill@^6.26.0/dist/polyfill.min.js',
-      'bluebird': 'npm:bluebird@3.5.1/js/browser/bluebird.min.js',
-      'jquery': 'https://code.jquery.com/jquery-3.1.1.min.js'
-      // 'kendo.all.min': 'https://fec.blob.core.windows.net/bundles/kendo-ui/2017.2.621/kendoui-javascript.js',
-      // 'aurelia-kendoui-bridge': 'https://fec.blob.core.windows.net/bundles/kendo-ui/2017.2.621/aurelia-kendoui-bridge.js'
-      // 'kendo.all': 'https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.js',
-      // 'aurelia-kendoui-bridge': 'https://unpkg.com/aurelia-kendoui-bridge@1.7.0/dist/amd/index.js'
+      'bluebird': 'npm:bluebird@3.5.1/js/browser/bluebird.min.js'
     },
     packages: {
       '/': {
