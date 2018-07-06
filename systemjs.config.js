@@ -15,7 +15,6 @@
       }
     },
     paths: {
-      'kendo.*': 'https://kendo.cdn.telerik.com/2017.2.621/js/kendo.*.js',
       'npm:': 'https://unpkg.com/'
     },
     map: {
@@ -27,7 +26,7 @@
       'babel-polyfill': 'npm:babel-polyfill@^6.26.0/dist/polyfill.min.js',
       'bluebird': 'npm:bluebird@3.5.1/js/browser/bluebird.min.js',
       'jquery': 'https://code.jquery.com/jquery-3.1.1.min.js',
-      // 'kendo.all.min': 'https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js',
+      'kendo.all.min': 'https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js',
       'aurelia-kendoui-bridge': 'https://unpkg.com/aurelia-kendoui-bridge@1.7.0/dist/amd/index.js'
     },
     packages: {
