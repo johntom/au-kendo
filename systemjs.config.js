@@ -15,8 +15,8 @@
       }
     },
     paths: {
-      'npm:': 'https://unpkg.com/',
-      'kendo.*': 'https://kendo.cdn.telerik.com/2017.2.621/js/kendo.*.js'
+      'kendo.*': 'https://kendo.cdn.telerik.com/2017.2.621/js/kendo.*.js',
+      'npm:': 'https://unpkg.com/'
     },
     map: {
       'plugin-babel': 'npm:systemjs-plugin-babel@0.0.25/plugin-babel.js',
