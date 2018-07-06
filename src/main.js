@@ -7,7 +7,7 @@ import 'kendo.all.min';
 export async function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
-    .developmentLogging();
+    .developmentLogging()
     .plugin('aurelia-kendoui-bridge');
 
 
