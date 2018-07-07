@@ -58,9 +58,7 @@ function buildDependencyMap() {
           if (jspm && jspm.directories) {
             const jspmMain = jspm.main;
             const dist = jspm.directories.dist || jspm.directories.lib;
-            // main = `${dist}/${jspmMain}`;
             main = `${dist}`;
-            // packages[jspmMain] = {
             packages[name] = {
               main: `${jspmMain}.js`,
               defaultExtension: 'js'
