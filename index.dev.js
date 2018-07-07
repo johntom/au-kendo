@@ -56,17 +56,17 @@ function buildDependencyMap() {
           const dir = values[i + 1];
           let {browser, main, name, version, jspm} = pkg.data;
           if (jspm && jspm.directories) {
-            // const jspmMain = jspm.main;
-            const jspmMain = name;
+            const jspmMain = jspm.main;
             const dist = jspm.directories.dist || jspm.directories.lib;
             // main = `${dist}/${jspmMain}`;
             main = `${dist}`;
-            packages[jspmMain] = {
+            // packages[jspmMain] = {
+            packages[name] = {
               main: `${jspmMain}.js`,
               defaultExtension: 'js'
             };
             if (jspm.dependencies) {
-              meta[jspmMain] = {
+              meta[name] = {
                 deps: Object.keys(jspm.dependencies)
               };
             }
