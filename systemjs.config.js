@@ -15,7 +15,8 @@
       }
     },
     paths: {
-      'npm:': 'https://unpkg.com/'
+      'npm:': 'https://unpkg.com/',
+      'aurelia-kendoui-bridge': 'https://unpkg.com/aurelia-kendoui-bridge@1.7.0/dist/amd/'
     },
     map: {
       'plugin-babel': 'npm:systemjs-plugin-babel@0.0.25/plugin-babel.js',
