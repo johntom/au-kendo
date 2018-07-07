@@ -7,8 +7,10 @@
     "type": "git"
   },
   "author": "Matt Duffield <matt.duffield@gmail.com> (https://frontendcreator.com/)",
-  "fecDependencies": {
+  "fecOld": {
     "aurelia-kendoui-bridge": "https://unpkg.com/aurelia-kendoui-bridge@1.7.0/dist/amd/index.js"
+  },
+  "fecDependencies": {
   },
   "dependencies": {
     "aurelia-animator-css": "1.0.4",
