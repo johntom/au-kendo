@@ -8,7 +8,7 @@
   },
   "author": "Matt Duffield <matt.duffield@gmail.com> (https://frontendcreator.com/)",
   "fecDependencies": {
-    "aurelia-kendoui-bridge": "https://unpkg.com/aurelia-kendoui-bridge@1.7.0/dist/aurelia-kendoui-bridge.js"
+    "aurelia-kendoui-bridge": "https://unpkg.com/aurelia-kendoui-bridge@1.7.0/dist/index.js"
   },
   "dependencies": {
     "aurelia-animator-css": "1.0.4",
