@@ -1,12 +1,5 @@
 export class AbSelect {
 
-  constructor() {
-
-  }
-}
-
-export class AbSelect {
-  
   myCollection = [
     { id: 1, option: 'Ketchup', group: 'Condiments' },
     { id: 2, option: 'Mustard', group: 'Condiments' },
@@ -14,5 +7,7 @@ export class AbSelect {
     { id: 12, option: 'Toasted', group: 'Breads' },
   ];
 
-  
+  constructor() {
+
+  }
 }
