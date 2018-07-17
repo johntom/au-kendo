@@ -88,11 +88,11 @@ function buildDependencyMap() {
               main = browser;
             }
 
-            if (dependencies) {
+            if (dependencies && Object.keys(dependencies).length > 0) {
               meta[name] = {
                 deps: Object.keys(dependencies)
               };
-            } else if (peerDependencies) {
+            } else if (peerDependencies && Object.keys(peerDependencies).length > 0) {
               meta[name] = {
                 deps: Object.keys(peerDependencies)
               };
