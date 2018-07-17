@@ -8,6 +8,16 @@
   },
   "author": "Matt Duffield <matt.duffield@gmail.com> (https://frontendcreator.com/)",
   "fecDependencies": {
+    "bootstrap": {
+      "map": "npm:bootstrap@3.3.7/./dist",
+      "package": {
+        "defaultExtension": "js",
+        "main": "js/bootstrap.js"
+      },
+      "meta": {
+        "deps": []
+      }
+    }
   },
   "dependencies": {
     "aurelia-animator-css": "1.0.4",

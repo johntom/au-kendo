@@ -107,11 +107,25 @@ function buildDependencyMap() {
           const valueUri = `npm:${name}@${version}/${main}`;
           map[name] = valueUri;
         }
+        // // Also, handle fecDependencies
+        // for (const [key2, value2] of Object.entries(data.fecDependencies)) {
+        //   console.log(`${key2} ${value2}`);
+        //   map[key2] = value2;
+        // }
+
         // Also, handle fecDependencies
-        for (const [key2, value2] of Object.entries(data.fecDependencies)) {
-          console.log(`${key2} ${value2}`);
-          map[key2] = value2;
+        for (const [name, value] of Object.entries(data.fecDependencies)) {
+          if (value.map) {
+            map[name] = value.map;
+          }
+          if (value.package) {
+            packages[name] = value.package;
+          }
+          if (value.meta && value.meta.deps) {
+            meta[name] = value.meta.deps;
+          }
         }
+
         localStorage.setItem('packageMap', JSON.stringify(map));
         localStorage.setItem('packagePackages', JSON.stringify(packages));
         localStorage.setItem('packageMeta', JSON.stringify(meta));
