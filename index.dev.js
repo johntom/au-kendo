@@ -60,21 +60,16 @@ function buildDependencyMap() {
             if (jspm.directories) {
               const dist = jspm.directories.dist || jspm.directories.lib;
               main = `${dist}`;
-              packages[name] = {
-                main: `${jspmMain}.js`,
-                defaultExtension: 'js'
-              };
-            } else if (jspm.main) {
-              packages[name] = {
-                main: `${jspmMain}.js`,
-                defaultExtension: 'js'
-              };
             }
-            if (jspm.dependencies) {
+            packages[name] = {
+              main: `${jspmMain}.js`,
+              defaultExtension: 'js'
+            };
+            if (jspm.dependencies && Object.keys(jspm.dependencies).length > 0) {
               meta[name] = {
                 deps: Object.keys(jspm.dependencies)
               };
-            } else if (dependencies) {
+            } else if (dependencies && Object.keys(dependencies).length > 0) {
               meta[name] = {
                 deps: Object.keys(dependencies)
               };
