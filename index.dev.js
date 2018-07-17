@@ -121,8 +121,8 @@ function buildDependencyMap() {
           if (value.package) {
             packages[name] = value.package;
           }
-          if (value.meta && value.meta.deps) {
-            meta[name] = value.meta.deps;
+          if (value.meta) {
+            meta[name] = value.meta;
           }
         }
 
