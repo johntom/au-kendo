@@ -19,7 +19,7 @@
       }
     },
     "bootstrap-select": {
-      "map": "npm:bootstrap-select@1.13.1/./dist",
+      "map": "npm:bootstrap-select@1.13.1/",
       "package": {
         "defaultExtension": "js",
         "main": "js/bootstrap-select.js"
