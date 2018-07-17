@@ -73,7 +73,8 @@
     "lodash": "4.17.10",
     "systemjs": "0.21.4",
     "systemjs-plugin-text": "0.0.11",
-    "jquery": "3.1.1"
+    "jquery": "3.1.1",
+    "bootstrap": "3.3.7"
   },
   "peerDependencies": {},
   "devDependencies": {
