@@ -51,6 +51,20 @@ function buildDependencyMap() {
         const map = {};
         const packages = {};
         const meta = {};
+
+        // Handle fecDependencies first
+        for (const [name, value] of Object.entries(data.fecDependencies)) {
+          if (value.map) {
+            map[name] = value.map;
+          }
+          if (value.package) {
+            packages[name] = value.package;
+          }
+          if (value.meta) {
+            meta[name] = value.meta;
+          }
+        }
+
         for (let i = 0; i < values.length - 1; i += 2) {
           const pkg = values[i];
           const dir = values[i + 1];
@@ -113,18 +127,18 @@ function buildDependencyMap() {
         //   map[key2] = value2;
         // }
 
-        // Also, handle fecDependencies
-        for (const [name, value] of Object.entries(data.fecDependencies)) {
-          if (value.map) {
-            map[name] = value.map;
-          }
-          if (value.package) {
-            packages[name] = value.package;
-          }
-          if (value.meta) {
-            meta[name] = value.meta;
-          }
-        }
+        // // Also, handle fecDependencies
+        // for (const [name, value] of Object.entries(data.fecDependencies)) {
+        //   if (value.map) {
+        //     map[name] = value.map;
+        //   }
+        //   if (value.package) {
+        //     packages[name] = value.package;
+        //   }
+        //   if (value.meta) {
+        //     meta[name] = value.meta;
+        //   }
+        // }
 
         localStorage.setItem('packageMap', JSON.stringify(map));
         localStorage.setItem('packagePackages', JSON.stringify(packages));
