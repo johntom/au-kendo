@@ -1,4 +1,4 @@
-import 'bootstrap-select/dist/css/bootstrap-select.min.css';
+// import 'bootstrap-select/dist/css/bootstrap-select.min.css';
 
 export class AbSelect {
 
