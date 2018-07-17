@@ -25,7 +25,7 @@
         "main": "js/bootstrap-select.js"
       },
       "meta": {
-        "deps": ["jquery", "bootstrap"]
+        "deps": ["bootstrap"]
       }
     },
     "aurelia-bootstrap-select": {
@@ -35,7 +35,7 @@
         "main": "index.js"
       },
       "meta": {
-        "deps": ["jquery", "bootstrap", "bootstrap-select"]
+        "deps": ["bootstrap-select"]
       }
     }
   },
