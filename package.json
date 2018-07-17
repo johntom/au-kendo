@@ -25,7 +25,17 @@
         "main": "js/bootstrap-select.js"
       },
       "meta": {
-        "deps": ["bootstrap", "jquery"]
+        "deps": ["jquery", "bootstrap"]
+      }
+    },
+    "aurelia-bootstrap-select": {
+      "map": "npm:aurelia-bootstrap-select@1.3.1/./dist/amd",
+      "package": {
+        "defaultExtension": "js",
+        "main": "index.js"
+      },
+      "meta": {
+        "deps": ["jquery", "bootstrap", "bootstrap-select"]
       }
     }
   },
@@ -63,8 +73,7 @@
     "lodash": "4.17.10",
     "systemjs": "0.21.4",
     "systemjs-plugin-text": "0.0.11",
-    "jquery": "3.1.1",
-    "aurelia-bootstrap-select": "1.3.1"
+    "jquery": "3.1.1"
   },
   "peerDependencies": {},
   "devDependencies": {
