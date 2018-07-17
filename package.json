@@ -13,9 +13,6 @@
       "package": {
         "defaultExtension": "js",
         "main": "js/bootstrap.js"
-      },
-      "meta": {
-        "deps": []
       }
     },
     "bootstrap-select": {
