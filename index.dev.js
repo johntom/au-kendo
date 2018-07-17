@@ -54,7 +54,7 @@ function buildDependencyMap() {
         for (let i = 0; i < values.length - 1; i += 2) {
           const pkg = values[i];
           const dir = values[i + 1];
-          let {browser, main, name, version, jspm, dependencies} = pkg.data;
+          let {browser, main, name, version, jspm, dependencies, peerDependencies} = pkg.data;
           if (jspm && jspm.directories) {
             const jspmMain = jspm.main;
             const dist = jspm.directories.dist || jspm.directories.lib;
@@ -86,6 +86,16 @@ function buildDependencyMap() {
               }
             } else if (browser) {
               main = browser;
+            }
+
+            if (dependencies) {
+              meta[name] = {
+                deps: Object.keys(dependencies)
+              };
+            } else if (peerDependencies) {
+              meta[name] = {
+                deps: Object.keys(peerDependencies)
+              };
             }
           }
           if (!main) {
