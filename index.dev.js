@@ -109,11 +109,6 @@ function buildDependencyMap() {
           const valueUri = `npm:${name}@${version}/${main}`;
           map[name] = valueUri;
         }
-        // // Also, handle fecDependencies
-        // for (const [key2, value2] of Object.entries(data.fecDependencies)) {
-        //   console.log(`${key2} ${value2}`);
-        //   map[key2] = value2;
-        // }
 
         // Also, handle fecDependencies
         for (const [name, value] of Object.entries(data.fecDependencies)) {
