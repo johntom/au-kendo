@@ -2,7 +2,7 @@
 import moment from 'moment';
 
 export class Welcome {
-  heading = 'Welcome to the Aurelia Navigation App! v1';
+  heading = 'Welcome to the Aurelia Navigation App! v1a';
   firstName = 'John';
   lastName = 'Doe';
   previousValue = this.fullName;
